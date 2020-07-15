@@ -13,12 +13,14 @@ import { HomeComponent } from './home/home.component';
 import { Router } from '@angular/router';
 import {RouterModule, Routes} from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
+import { NasdaqComponent } from './nasdaq/nasdaq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExperianComponent,
-    HomeComponent
+    HomeComponent,
+    NasdaqComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -29,7 +31,12 @@ import {MatIconModule} from '@angular/material/icon';
       {
         path: 'experian',
         component: ExperianComponent
-      }]
+      },
+      {
+        path: 'nasdaq',
+        component: NasdaqComponent
+      }
+    ]
     ),
     BrowserModule,
     AppRoutingModule,

@@ -191,21 +191,50 @@
 @media only screen and (max-device-width: 1024px),
 only screen and (max-device-width: 1024px),
 only screen and (max-width: 1024px) {
+  body {
+    padding: 0 15px 15px 15px 0!important;
+  }
+  .header__inner {
+    text-align: center!important;
+    width: calc(100% - 30px)!important;
+  }
+  .contact {
+    img {
+      width: 30px!important;
+      position: relative!important;
+      top: 10px!important;
+    }
+  }
+  .logo {
+    float: none!important;
+    position: relative;
+    left: 45px!important;
+    img {
+      width: 70px!important;
+      position: relative;
+    }
+  }
   .portfolio-thumbnail {
-    width: 100%!important;
+    width: calc(100% - 30px)!important;
+    h2 {
+      font-size: 21px!important;
+    }
     .portfolio-thumbnail__inner {
       height: 250px!important;
     }
   }
   .hero__container {
-    height: 200px!important;
+    height: inherit!important;
     .hero__inner {
       h1 {
         font-size: 26px!important;
-        line-height: 34px!important;
+        line-height: 36px!important;
       }
       img.--rock-it {
-        width: 24px!important;
+        width: 50px!important;
+        position: absolute;
+        left: 50%;
+        bottom: -60px;
       }
     }
   }
