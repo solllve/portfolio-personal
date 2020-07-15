@@ -10,6 +10,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { ExperianComponent } from './experian/experian.component';
 import { HomeComponent } from './home/home.component';
 
+import { Router } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
+import {MatIconModule} from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,11 +21,22 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      [{
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'experian',
+        component: ExperianComponent
+      }]
+    ),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

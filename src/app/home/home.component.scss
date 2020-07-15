@@ -72,6 +72,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    cursor: pointer;
     h2 {
       font-family: Abril Fatface;
       font-style: normal;
@@ -81,11 +82,16 @@
       text-align: center;
       color: #F9F2FA;
       margin-top: 0px;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
+      &:hover {
+        color: #F44BF8;
+        text-decoration: line-through;
+      }
     }
     .portfolio-thumbnail {
       width: calc(50% - 30px);
       padding: 15px;
+      position: relative;
       .portfolio-thumbnail__inner {
         background-color: #fff;
         width: 100%;
@@ -97,13 +103,46 @@
         -webkit-box-shadow: 0px 0px 73px 0px rgba(0,0,0,0.60);
         -moz-box-shadow: 0px 0px 73px 0px rgba(0,0,0,0.60);
         box-shadow: 0px 0px 73px 0px rgba(0,0,0,0.60);
+        .locked__message {
+          color: #F9F2FA;
+          display: block;
+        }
+        &.--nasdaq__vid {
+          background: rgb(44,35,203);
+          background: -moz-linear-gradient(35deg, rgba(44,35,203,1) 0%, rgba(73,73,210,1) 31%, rgba(0,212,255,1) 100%);
+          background: -webkit-linear-gradient(35deg, rgba(44,35,203,1) 0%, rgba(73,73,210,1) 31%, rgba(0,212,255,1) 100%);
+          background: linear-gradient(35deg, rgba(44,35,203,1) 0%, rgba(73,73,210,1) 31%, rgba(0,212,255,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c23cb",endColorstr="#00d4ff",GradientType=1);
+        }
+        &.--experian__bg {
+          background: url("/assets/experian-blurred.png") no-repeat top;
+          background-size: cover;
+          mat-icon {
+            font-size: 46px;
+            color: #F9F2FA;
+          }
+        }
+        &.--metronome__bg {
+          background: url("/assets/metronome-image.png") no-repeat top;
+          background-size: cover;
+          mat-icon {
+            font-size: 46px;
+            color: #F9F2FA;
+          }
+        }
         img {
           width: 130%;
           height: 130%;
         }
+
       }
     }
   }
+}
+.gradient__overlay {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
 
 .--fade-in-intro {
@@ -152,10 +191,21 @@
 @media only screen and (max-device-width: 1024px),
 only screen and (max-device-width: 1024px),
 only screen and (max-width: 1024px) {
+  .portfolio-thumbnail {
+    width: 100%!important;
+    .portfolio-thumbnail__inner {
+      height: 250px!important;
+    }
+  }
   .hero__container {
+    height: 200px!important;
     .hero__inner {
       h1 {
-        font-size: 14px!important;
+        font-size: 26px!important;
+        line-height: 34px!important;
+      }
+      img.--rock-it {
+        width: 24px!important;
       }
     }
   }
