@@ -163,6 +163,12 @@
 	-webkit-animation-timing-function: ease-in-out;
 	transition-timing-function: ease;
 }
+.mobile__screen {
+  position: absolute;
+  z-index: 2;
+  right: 85px;
+  bottom: 65px;
+}
 
 @keyframes FadeIn {
 	0% {
@@ -207,11 +213,10 @@ only screen and (max-width: 1024px) {
   }
   .logo {
     float: none!important;
-    position: relative;
-    left: 45px!important;
     img {
       width: 70px!important;
       position: relative;
+      left: 15px
     }
   }
   .portfolio-thumbnail {
@@ -233,7 +238,7 @@ only screen and (max-width: 1024px) {
       img.--rock-it {
         width: 50px!important;
         position: absolute;
-        left: 50%;
+        left: calc(50% - 25px);
         bottom: -60px;
       }
     }
