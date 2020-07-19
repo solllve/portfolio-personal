@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-.cdk-global-scrollblock {
-  position: relative;
-  background: #2C0E2D;
-}
+@import './portfolio-theme.scss';
 
+.cdk-global-scrollblock {
+  height: 400%;
+  overflow-y: scroll;
+  background: #2C0E2D !important;
+}
 html, body {
   height: 100%;
   background: #2C0E2D!important;

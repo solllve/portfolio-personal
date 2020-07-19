@@ -15,6 +15,7 @@ import { Router } from '@angular/router';
 import {RouterModule, Routes} from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import { NasdaqComponent } from './nasdaq/nasdaq.component';
+import { MatInputModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { NasdaqComponent } from './nasdaq/nasdaq.component';
     MatSliderModule,
     MatButtonModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
   ],
   providers: [
     DialogExperian
