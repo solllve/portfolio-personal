@@ -4,11 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { ExperianComponent } from './experian/experian.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent, DialogExperian } from './home/home.component';
 
 import { Router } from '@angular/router';
 import {RouterModule, Routes} from '@angular/router';
@@ -20,6 +21,7 @@ import { NasdaqComponent } from './nasdaq/nasdaq.component';
     AppComponent,
     ExperianComponent,
     HomeComponent,
+    DialogExperian,
     NasdaqComponent
   ],
   imports: [
@@ -43,9 +45,15 @@ import { NasdaqComponent } from './nasdaq/nasdaq.component';
     BrowserAnimationsModule,
     MatSliderModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
   ],
-  providers: [],
+  providers: [
+    DialogExperian
+  ],
+  entryComponents: [
+    DialogExperian
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
