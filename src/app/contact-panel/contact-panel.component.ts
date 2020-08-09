@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MainService} from '../services/main.service';
 
 @Component({
   selector: 'app-contact-panel',
@@ -9,15 +10,17 @@ export class ContactPanelComponent implements OnInit {
 
   fullWidth = true;
   isPanelOpen: boolean;
-  constructor() { }
+  constructor(
+    public service: MainService
+  ) { }
   ngOnInit() {
-    this.isPanelOpen = false;
+    this.service.open = false;
   }
   panelOpen() {
-    this.isPanelOpen = true;
+    this.service.open = true;
   }
   close() {
-    this.isPanelOpen = false;
+    this.service.open = false;
   }
 
 }

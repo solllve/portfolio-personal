@@ -53,7 +53,7 @@
   position: absolute;
   right: 0px;
   top: 0px;
-  background-color: #ccc;
+  background-color: #F44BF8;
   z-index: 10;
   display: none;
   -webkit-box-shadow: 4px 3px 41px -10px rgba(0,0,0,0.75);
@@ -63,12 +63,12 @@
 .container__overlay-panel--right {
   height: 100%;
   position: absolute;
-  right: 0px;
+  left: 0px;
   top: 0px;
   background-color: none;
   z-index: 9;
   display: none;
-  width: 33%;
+  width: 66%;
 }
 .overlay__fade-full.--showPanel {
   display: inherit;
@@ -124,9 +124,42 @@ a.close__panel {
 }
 .--third {
   width: 33%;
+  min-width: 250px;
 }
 .--quarter {
   width: 25%;
+}
+h1 {
+  margin: 0px;
+  padding: 15px;
+  font-size: 115px;
+  line-height: 115px;
+  font-family: 'Abril Fatface', cursive;
+  color: #2C0E2D;
+}
+p {
+  line-height: 26px;
+  color: #2C0E2D;
+  font-size: 18px;
+  padding: 0px 15px 0px 15px;
+}
+.list__contact-links {
+  margin: 0px;
+  padding: 15px;
+  list-style-type: none;
+  font-family: 'Abril Fatface', cursive;
+  li {
+    margin: 0px;
+    padding: 0px;
+    font-size: 21px;
+    a {
+      color: #2C0E2D;
+      text-decoration: none;
+    }
+  }
+}
+.img__wave {
+  margin: 0 10px 0 0;
 }
 
 @keyframes slideLeft {

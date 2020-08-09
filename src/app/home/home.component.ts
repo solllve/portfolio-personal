@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-
+import {MainService} from '../services/main.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -10,7 +10,10 @@ export class HomeComponent implements OnInit {
 
   title = 'portfolio-personal';
 
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog,
+    public service: MainService
+  ) {}
 
   ngOnInit() {
   }
@@ -23,6 +26,10 @@ export class HomeComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
+  }
+
+  openContactPanel() {
+    this.service.open = true;
   }
 
 }
