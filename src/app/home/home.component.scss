@@ -270,16 +270,44 @@ only screen and (max-width: 1024px) {
   background: #F44BF8;
   color: #2C0E2D;
   h1.mat-dialog-title {
-    margin-bottom: 0px!important;
+    margin-bottom: 10px!important;
+    font-family: "Abril Fatface", cursive;
+    line-height: 60px;
+    font-size: 50px;
   }
   .link__case-study {
     color: #2C0E2D;
     text-decoration: none;
+    font-weight: bold;
     display: block;
     clear: both;
     outline: none;
     margin: 7px 0px 0px 0px;
     padding: 0px;
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+  .container__close-modal {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+  }
+  .container__header {
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  p {
+    line-height: 26px;
+    color: #2C0E2D;
+    font-size: 18px;
+    padding: 0px;
+    margin-top: 0px;
   }
 }
 
