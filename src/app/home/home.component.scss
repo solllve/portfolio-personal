@@ -82,6 +82,14 @@
       color: #F9F2FA;
       margin-top: 0px;
       letter-spacing: 2px;
+      a {
+        color: #F9F2FA;
+        text-decoration: none;
+        &:hover {
+          color: #F44BF8;
+          text-decoration: line-through;
+        }
+      }
       &:hover {
         color: #F44BF8;
         text-decoration: line-through;

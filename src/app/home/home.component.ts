@@ -32,6 +32,10 @@ export class HomeComponent implements OnInit {
     this.service.open = true;
   }
 
+  goToMedium() {
+    console.log('test')
+  }
+
 }
 
 @Component({
