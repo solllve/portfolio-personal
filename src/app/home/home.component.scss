@@ -263,6 +263,27 @@ only screen and (max-width: 1024px) {
 	-webkit-animation-timing-function: ease-in-out;
 	transition-timing-function: ease;
 }
+
+//modal
+::ng-deep .mat-dialog-container {
+  border-radius: 0px!important;
+  background: #F44BF8;
+  color: #2C0E2D;
+  h1.mat-dialog-title {
+    margin-bottom: 0px!important;
+  }
+  .link__case-study {
+    color: #2C0E2D;
+    text-decoration: none;
+    display: block;
+    clear: both;
+    outline: none;
+    margin: 7px 0px 0px 0px;
+    padding: 0px;
+  }
+}
+
+//animations
 @keyframes FadeIn {
 	0% {
     opacity: 0;

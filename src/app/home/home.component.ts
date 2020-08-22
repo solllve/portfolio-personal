@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
   viewExperianInfo() {
     const dialogRef = this.dialog.open(DialogExperian, {
-      width: '450px'
+      width: '650px'
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -41,6 +41,7 @@ export class HomeComponent implements OnInit {
 @Component({
   selector: 'experian-dialog',
   templateUrl: 'experian-dialog.html',
+  styleUrls: ['./home.component.scss']
 })
 
 export class DialogExperian {
