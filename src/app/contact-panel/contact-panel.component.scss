@@ -201,3 +201,20 @@ p {
 .title__panel {
   margin-right: 15px;
 }
+.container__close-modal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #2C0E2D;
+  cursor: pointer;
+}
+//responsive overrides
+@media only screen and (max-device-width: 1024px),
+only screen and (max-device-width: 1024px),
+only screen and (max-width: 1024px) {
+  .container__overlay-panel--left {
+    &.--third {
+      width: 75%;
+    }
+  }
+}

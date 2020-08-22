@@ -157,6 +157,7 @@
 
 .--rock-it {
   position: relative;
+  left: -10px;
   animation: RockIt 1s infinite;
 	animation-timing-function: ease-in-out;
 	-webkit-animation-timing-function: ease-in-out;
@@ -183,6 +184,8 @@ only screen and (max-width: 1024px) {
     width: calc(100% - 30px)!important;
   }
   .contact {
+    position: relative;
+    top: -10px;
     img {
       width: 30px!important;
       position: relative!important;
@@ -208,16 +211,12 @@ only screen and (max-width: 1024px) {
   }
   .hero__container {
     height: inherit!important;
+    margin-bottom: 0px;
     .hero__inner {
       h1 {
-        font-size: 26px!important;
+        font-size: 90px!important;
         line-height: 36px!important;
-      }
-      img.--rock-it {
-        width: 50px!important;
-        position: absolute;
-        left: calc(50% - 25px);
-        bottom: -60px;
+        margin: 45px 0 25px 0;
       }
     }
   }

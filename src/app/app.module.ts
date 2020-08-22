@@ -18,6 +18,7 @@ import { NasdaqComponent } from './nasdaq/nasdaq.component';
 import { MatInputModule } from '@angular/material';
 import { ContactPanelComponent } from './contact-panel/contact-panel.component';
 import { MainComponent } from './main/main.component';
+import { WorkNasdaqComponent } from './work-nasdaq/work-nasdaq.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MainComponent } from './main/main.component';
     DialogExperian,
     NasdaqComponent,
     ContactPanelComponent,
-    MainComponent
+    MainComponent,
+    WorkNasdaqComponent
   ],
   imports: [
     RouterModule.forRoot(

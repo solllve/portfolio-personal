@@ -1,5 +1,8 @@
 <div class="overlay__fade-full" [ngClass]="{'--showPanel': this.service.open }" >
   <div class="container__overlay-panel--left" [ngClass]="{'--third' : true}">
+    <div class="container__close-modal">
+      <mat-icon (click)="this.close()">close</mat-icon>
+    </div>
     <h1><em>Let's Talk!</em></h1>
     <p><img class="img__wave" src="/assets/wave.svg" width="25"/>My name is Casey Hald, and I've been doing product design, ux design & front-end web development for 10 years combined experience. Currently employed at Experian, but open to opportunities.</p>
     <ul class="list__contact-links">
